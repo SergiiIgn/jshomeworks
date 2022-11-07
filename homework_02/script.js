@@ -13,5 +13,7 @@ let cursorCoordinates; //a variable that stores the coordinates of the cursor (m
 let greeting = 'Hello World!';
 console.log(greeting);
 
-userName = 'Jennifer'
+userName = 'Jennifer';
+userSurname = 'Smith';
 console.log('userName is ', userName);
+console.log('userSurname is', userSurname);
