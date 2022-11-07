@@ -14,4 +14,4 @@ let greeting = 'Hello World!';
 console.log(greeting);
 
 userName = 'Jennifer'
-console.log('userSurname is ', userName);
+console.log('userName is ', userName);
