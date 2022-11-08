@@ -3,6 +3,10 @@ let userAge;
 let userName;
 let userSurname;
 
+userAge = 21;
+userName = 'Jennifer';
+userSurname = 'Smith';
+
 let newUser; // a variable that stores the new user
 let shoppingList; //a variable that stores a shopping list
 let userIsOnline; //a variable that stores information about whether the user is online
@@ -13,7 +17,5 @@ let cursorCoordinates; //a variable that stores the coordinates of the cursor (m
 let greeting = 'Hello World!';
 console.log(greeting);
 
-userName = 'Jennifer';
-userSurname = 'Smith';
 console.log('userName is ', userName);
 console.log('userSurname is', userSurname);
