@@ -93,7 +93,7 @@ console.log(weekDay(dayNumber));
 function greetingType() {
     
     let name = prompt('What is your name?');
-    let age = Number(prompt('Hello, how old are you?'));
+    let age = Number(prompt('How old are you?'));
 
     if (age > 30 ) {
         alert('Hello, ' + name);
