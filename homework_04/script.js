@@ -78,8 +78,10 @@ console.log('a + b =', sum2());
 //Task 3 Exponentiation
 
 // first option of function
-function exponentiation() {
-    base = prompt('Give a base');
+let base = prompt('Give a base');
+let power = prompt('Give a power');
+
+function exponentiation(base, power = 2) {
 
     if (base === null) {
         alert('Task canceled');
@@ -89,10 +91,7 @@ function exponentiation() {
         alert('Oops!!! It is not number');
         return(false);
 
-    } else {
-        power = prompt('Give a power');
-
-        if (power === null) {
+    } else if (power === null) {
             alert('Task canceled');
             return(false);
 
@@ -103,7 +102,6 @@ function exponentiation() {
             alert('Oops!!! It is not number');
             return(false);
         }
-    }
     alert(base + ' to the ' + Number(power) + ' power is ' + (base ** power));
     return base ** power;
 }
@@ -139,8 +137,8 @@ const exponentiation2 = () => {
     return base ** power;
 } 
 
-exponentiation();
-exponentiation2();
+exponentiation(base, power);
+// exponentiation2();
 
 //End of task 3
 //Task 4 Day of week 
