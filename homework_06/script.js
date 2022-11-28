@@ -14,23 +14,10 @@
 console.log('Registration');
 
 const checkPasswordValidation = (userPassword) => {
-    let upDetector = 0;
-    let lowDetector = 0;
 
-    if (userPassword.length <= 6) return false;
+    if (userPassword.length <= 6 || userPassword.toLowerCase() === userPassword || userPassword.toUpperCase() === userPassword) return false;
 
-    for (let i = 0; i < userPassword.length; i++) {
-        if (userPassword[i] >= 'a' && userPassword[i] <= 'z') lowDetector++;
-
-        if (userPassword[i] >= 'A' && userPassword[i] <= 'Z') upDetector++;
-
-        if (upDetector && lowDetector) {
-            return true;
-            break;
-        }
-    }
-
-    return false;
+    return true;
 }
 
 const registration = () => {
@@ -90,6 +77,13 @@ const getRandomNumber = (a, b) => {
     }
 };
 
+const getRandomIntegerNumber = (a, b) => {
+    a = Math.ceil(a);
+    b = Math.floor(b);
+    return Math.floor(Math.random() * (b - a + 1)) + a;
+  }
+
 console.log('Random number', getRandomNumber(startOfInterval, finishOfInterval));
+console.log('Random integer number', getRandomIntegerNumber(startOfInterval, finishOfInterval));
 
 //End of task 2
