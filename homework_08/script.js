@@ -91,3 +91,30 @@ console.log('findExcess([1, 2, 3])', findExcess([1, 2, 3]));
 console.log('findExcess([2, 6, 8, 10, 3])', findExcess([2, 6, 8, 10, 3]));
 console.log('findExcess([0, 0, 3, 0, 0])', findExcess([0, 0, 3, 0, 0]));
 console.log('findExcess([1, 1, 0, 1, 1])', findExcess([1, 1, 0, 1, 1]));
+
+//End of task 3
+//Task 3 V2.0 Number of occurrences V2.0
+
+console.log('Task 3 V2.0');
+
+const findExcess2 = (numberArray) => {
+    const even = [];
+    const uneven = [];
+
+    for (let item in numberArray) {
+        if (numberArray[item] % 2) {
+            uneven.push(numberArray[item]);
+        } else even.push(numberArray[item]);
+    }
+
+    if (even.length == 1) return even[0]
+    else return uneven[0];
+};
+
+console.log('findExcess2([0, 1, 2])', findExcess2([0, 1, 2]));
+console.log('findExcess2([1, 2, 3])', findExcess2([1, 2, 3]));
+console.log('findExcess2([2, 6, 8, 10, 3])', findExcess2([2, 6, 8, 10, 3]));
+console.log('findExcess2([0, 0, 3, 0, 0])', findExcess2([0, 0, 3, 0, 0]));
+console.log('findExcess2([1, 1, 0, 1, 1])', findExcess2([1, 1, 0, 1, 1]));
+
+//End of task 3 V2.0
