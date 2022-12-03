@@ -59,7 +59,6 @@ const findExcess = (numberArray) => {
         for (let elem in numberArray) {
             if (numberArray[elem] % 2) {
                 return numberArray[elem];
-                break;
             }
         }
 
@@ -67,7 +66,6 @@ const findExcess = (numberArray) => {
         for (let elem in numberArray) {
             if (!(numberArray[elem] % 2)) {
                 return numberArray[elem];
-                break;
             }
         }
     }
