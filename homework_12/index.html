@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .button{
+            position: relative;
+            margin: 2rem;
+            left: 50%;
+            padding: 0 18px;
+            height: 44px;
+            border: none;
+            background: #575445;
+            border-radius: 6px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            cursor: pointer;
+            transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+                        transform  600ms cubic-bezier(.33,.11,.02,.99);
+            box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                0 1px  6px  rgba(0, 0, 0, .05),
+                0 8px  8px  rgba(0, 0, 0, .1), 
+                0 16px 16px rgba(0, 0, 0, .1), 
+                8px 32px 32px rgba(0, 0, 0, .15), 
+                8px 64px 64px rgba(0, 0, 0, .15);                 
+            transform: scale(1.05) translateY(-0.5rem);       
+        }
+
+        .text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .tooltip {
+            position: absolute;
+            background-color: gray;
+            max-width: 30rem;
+            color: black;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+    <title>Homework_12</title>
+</head>
+<body>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <div>
+        <button class="button" id="example">
+            Button
+        </button>
+    </div>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <button class="button">Button2</button>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel enim nostrum
+        est, exercitationem, recusandae quibusdam aliquid hic magni quaerat
+        maiores quam dicta sapiente quis nam? Suscipit illum in rerum quisquam
+        excepturi ea doloremque? Iusto ratione tempore laboriosam nam aspernatur?
+        Illo facilis amet ullam, debitis vero obcaecati exercitationem
+        necessitatibus aliquam, quod culpa vel aperiam, eum aspernatur asperiores
+        illum nulla quam velit neque repellendus at nostrum nisi? Dolorem ipsa,
+        molestiae ad tenetur libero numquam obcaecati facere natus quam error
+        doloribus iste aperiam optio illo expedita rerum neque earum, officiis
+        dolorum in? Dolorum architecto explicabo repellendus, quia dolore aut at
+        obcaecati optio assumenda.
+    </p>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
