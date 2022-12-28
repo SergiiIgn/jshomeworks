@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>        
+        .container{
+            width: 1440px;
+            margin: 20px auto;
+        }
+
+        .button{
+            padding: 10px;
+            padding-left: 17px;
+            background-color: darkgreen;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 7px;
+        }
+
+        .slider{
+            max-width: 20%;
+        }
+        
+        .slider__item{
+            display: none;
+        }
+        
+        .slider__item--appear{
+            display: contents;
+        }
+        
+        .slider__image{
+            max-width: 100%;
+        }
+
+        .slider__buttons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+    <title>Homework_13</title>
+</head>
+<body>
+    <div class="slider container">
+        <ul class="slider__list">
+            <li class="slider__item">
+                <img src="./img/1.jpg" alt="slider pictire" class="slider__image">
+            </li>
+            <li class="slider__item">
+                <img src="./img/2.jpg" alt="slider pictire" class="slider__image">
+            </li>
+            <li class="slider__item">
+                <img src="./img/3.jpg" alt="slider pictire" class="slider__image">
+            </li>
+            <li class="slider__item">
+                <img src="./img/4.jpg" alt="slider pictire" class="slider__image">
+            </li>
+        </ul>
+        <div class="slider__buttons">
+            <button class="button" id="prev">Prev</button>
+            <button class="button" id="next">Next</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
