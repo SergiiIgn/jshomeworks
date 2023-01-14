@@ -7,6 +7,7 @@
 // Функционал должен работать при закрытии вкладки или бразура, обновлении страницы.
 console.log('Task 1');
 
+
 const renderGreeting = () => {
   const greeting = document.createElement('h2');
   greeting.innerText = `Welcome`;
@@ -16,21 +17,19 @@ const renderGreeting = () => {
   let visitsCount;
   
   if (localStorage.getItem("visitsCount") ) {
-    visitsCount = JSON.parse(localStorage.getItem("visitsCount"));
+    visitsCount = JSON.parse(localStorage.getItem("visitsCount")) + 1;
     
     const numberVisitsString = document.createElement('h2');
     numberVisitsString.innerText = `You have logged in ${visitsCount} times`;
+    
     document.body.append(numberVisitsString);
-    
-    visitsCount++;
-    
-    localStorage.setItem("visitsCount", visitsCount);
+
   } else {
     visitsCount = 1;
     
-    localStorage.setItem("visitsCount", visitsCount);
   }
-
+  
+  localStorage.setItem("visitsCount", visitsCount);
 };
 
 renderGreeting();
